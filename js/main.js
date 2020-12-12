@@ -1,9 +1,9 @@
 //Slider
-var slides = document.querySelector('.slider-items').children;
-var nextSlide = document.querySelector(".right-slide");
-var prevSlide = document.querySelector(".left-slide");
-var totalSlides = slides.length;
-var index=0;
+let slides = document.querySelector('.slider-items').children;
+let nextSlide = document.querySelector(".right-slide");
+let prevSlide = document.querySelector(".left-slide");
+let totalSlides = slides.length;
+let index = 0;
 
 nextSlide.onclick=function () {
      next("next");
@@ -41,7 +41,7 @@ $(document).ready(function(){
 	$('a[href^="#"]').on('click',function (e) {
 	    e.preventDefault();
 
-	    var target = this.hash,
+	    let target = this.hash,
 	    $target = $(target);
 
 	    $('html, body').stop().animate({
